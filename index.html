@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <title>Invoice Creator</title>
 </head>
 <body>
@@ -16,13 +17,46 @@
             <h1>Invoice Creator</h1>
             <p class="small-text">Thanks for choosing GoodCorp, LLC!</p>
         </header>
-        <section class="content-area">
+        <section class="content-section">
             <div class="top">
-                <button class="btn">Wash Car: $10</button>
-                <button class="btn">Mow Lawn: $20</button>
-                <button class="btn">Pull Weeds: $30</button>
+                <div class="btn-div">
+                    <button class="btn">Wash Car: $10</button>
+                    <button class="btn">Mow Lawn: $20</button>
+                    <button class="btn">Pull Weeds: $30</button>
+                </div>
+                <ul class="task-list">
+                    <li style="margin: 19px 0">
+                        <small class="small-text">TASK</small>
+                        <small class="small-text">TOTAL</small>
+                    </li>
+                    <li class="task">
+                        <p>Wash Car<small class="smallest-text">Remove</small></p>
+                        <p><span>$</span>10</p>
+                    </li>
+                    <li class="task">
+                        <p>Mow Lawn<small class="smallest-text">Remove</small></p>
+                        <p><span>$</span>20</p>
+                    </li>
+                    <li class="task">
+                        <p>Pull Weeds<small class="smallest-text">Remove</small></p>
+                        <p><span>$</span>30</p>
+                    </li>
+                </ul>
             </div>
-            <div class="bottom"></div>
+            <div class="bottom">
+                <div class="billing">
+                    <small class="small-text">NOTES</small>
+                    <small class="small-text">TOTAL AMOUNT</small>
+                </div>
+                <div class="billing-second">
+                    <small class="small-text">We accept cash, credit card, or PayPal</small>
+                    <p>$60</p>
+                </div>
+                <button class="send-btn">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                    Send Invoice
+                </button>
+            </div>
         </section>
     </main>
     

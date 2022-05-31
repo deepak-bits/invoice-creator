@@ -16,7 +16,8 @@ body{
 
 .container{
     width: 550px;
-    height: 75vh;
+    /* max-height: 80vh; */
+    /* height: 80vh; */
     /* display: block; */
     border: 5px solid white;
     margin: 0 auto;
@@ -27,17 +28,23 @@ body{
 }
 
 .header{
-    height: 190px;
+    /* height: 190px; */
+    /* height: 30%; */
     background-color: #3A69D2;
     border-radius: 17px 17px 0 0;
     color: #fff;
     text-align: center;
-    padding: 5px;
+    padding: 10px;
+    
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
 }
 
 .header h1{
     /* width: 354px; */
-    margin-top: 59px;
+    margin-top: 40px;
     font-weight: 800;
     font-size: 40px;
     line-height: 40px;
@@ -49,7 +56,109 @@ body{
     font-size: 16px;
     line-height: 28px;
     margin-top: 9px;
+    margin-bottom: 40px;
     /* margin-left: 71px;
     width: 408px; */
     
+}
+
+.task-list{
+    list-style: none;
+    width: 100%;
+    margin-top: 43px;
+}
+
+.task-list li{
+    display: flex;
+    justify-content: space-between;
+}
+
+.content-section{
+    background-color: #1F2937;
+    /* background-color: red; */
+    /* height: 75%; */
+    border-radius: 0px 0px 17px 17px;
+    color: #fff;
+    padding: 40px;
+}
+
+.btn-div{
+    /* margin: 0 30px; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn{
+    font-weight: 500;
+    font-size: 14px;
+    background-color: #D1D4F4;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+}
+
+li > p{
+    font-size: 20px;
+    line-height: 20px;
+    /* font-weight: 700; */
+}
+
+li > p:first-child{
+    font-weight: 700;
+}
+
+li > p:last-child{
+    font-size: 24px;
+}
+
+
+li .smallest-text{
+    font-size: 8px;
+    line-height: 20px;
+    margin-left: 15px;
+    color: #D5D4D8;
+}
+
+.small-text{
+    font-size: 12px;
+    color: #D5D4D8;
+    line-height: 20px;
+}
+
+.task{
+    margin-bottom: 23px; 
+}
+
+p > span{
+    color: #77757c;
+}
+
+.top{
+    /* margin-bottom: 50px; */
+    border-bottom: 1px solid #C3C6DB;
+}
+
+.billing, .billing-second{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 11px;
+}
+
+.billing-second > p{
+    font-size: 36px;
+}
+
+.send-btn{
+    width: 100%;
+    padding: 9px 17px 9px 15px;
+    margin-top: 50px;
+    background-color: #3A69D2;
+    color: #fff;
+    border: none;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 6px;
+}
+
+i{
+    margin-right: 3px;
 }
